@@ -1,0 +1,111 @@
+*, *:before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu {
+    background-color: #286A56;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+}
+.logo {
+    color: #fff;
+    font-size: 30px;
+    padding: 0 75px;
+    font-weight: bold;
+}
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu-items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu-items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+}
+.menu-items li :hover, li.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .4s;
+}
+.btn-menu {
+    margin-right: 25px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ul.show {
+    top: 65px;
+}
+@media screen and (max-width: 952px) {
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .menu-items li a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 858px) {
+    .menu {
+        height: 65px;
+    }
+    .btn-menu {
+        display: inline-flex;
+    }
+    .menu-items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu-items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu-items li:hover {
+        background: none;
+    }
+    .menu-items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menu-items li a:hover {
+        color: #286A56;
+    }
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .menu-items li {
+        margin:  5px 0 0 0;
+    }
+    .menu-items {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
