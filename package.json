@@ -4,7 +4,8 @@
   "description": "portafolio realizado con express en modelo MVC",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "npm start": "node src/index.js"
   },
   "author": "Cesar Andres Pereira Bernal <konichiva3125@gmail.com>",
   "license": "MIT",
