@@ -1,18 +1,138 @@
-<%- include('template/narbar'); %>  
+<%- include('template/narbar'); %>
 
-<div class="showcase">
-    <img class="img-accounts" src="/public/img/perfil.jpg" alt="foto perfil">
-    <p class="">Mi nombre es </p>
-    <h1 class="">Cesar Andres Pereira Bernal</h1>
-    <p class="">development</p>
-</div>
-<div>
-    <div>
-        <h3>Aserca de mi</h3>
+<section>
+  <div class="inicio" id="inicio">
+    <div class="presentacion">
+      <p class="bienvenida">bienvenidos</p>
+      <h2>Soy <span>Cesar Pereira</span> Desarrollador Web</h2>
+      <p class="descripcion">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+        possimus!
+      </p>
+      <a href="/proyectos">Ir a Proyectos</a>
     </div>
-    <div>
-        <p>development amante a los videojuegos y al manga japones con conocimientos en backend y fronten sin título pero con muchas ganas y conocimiento, todos mis estudios son de manera informal ya sea de YouTube la universidad más grande del mundo y de plataformas como undemy, codigofacilito, plazit y un maravilloso libro llamada el gran libro de JavaScript de lo cual aprendí una valiosa frase "unca parar de aprender" de Fredy Vega CEO Y cofounder de plazit. </p>
+  </div>
+</section>
+<!--seccion sobre mi-->
+<section id="sobremi">
+  <div class="contenedor-foto">
+    <img src="/public/img/perfil.jpg" alt="foto personal" />
+  </div>
+  <div class="sobremi">
+    <p class="titulo-seccion">Sobre Mi</p>
+    <h2>Hola, soy <span>Cesar Pereira</span></h2>
+    <h3>Desarrollador Web</h3>
+    <p>
+      Amante a los videojuegos y al manga japones con conocimientos en backend y
+      fronten sin título pero con muchas ganas y conocimiento, todos mis
+      estudios son de manera informal ya sea de YouTube la universidad más
+      grande del mundo y de plataformas como undemy, codigofacilito, plazit y un
+      maravilloso libro llamada el gran libro de JavaScript de lo cual aprendí
+      una valiosa frase "unca parar de aprender" de Fredy Vega CEO Y cofounder
+      de plazit.
+    </p>
+    <a href="#">Descargar CV</a>
+  </div>
+</section>
+<!--seccion de habilidades-->
+<section id="habilidades">
+    <h3 class="titulo-seccion">MIS HABILIDADES</h3>
+    <div class="fila">
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-html5"></i></span>
+            <h4>HTML Y CSS</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">80%</span>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-js-square"></i></span>
+            <h4>JavaScript</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">85%</span>
+            <div class="barra">
+                <div id="JavaScript" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-angular"></i></span>
+            <h4>Angular</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">56%</span>
+            <div class="barra">
+                <div id="Angular" class="barra-progreso3"></div>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="fila">
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-react"></i></span>
+            <h4>React</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">45%</span>
+            <div class="barra">
+                <div id="React" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-node"></i></span>
+            <h4>Express</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">75%</span>
+            <div class="barra">
+                <div id="Express" class="barra-progreso5"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-box-archive"></i></span>
+            <h4>MongoDB</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">75%</span>
+            <div class="barra">
+                <div id="MongoDB" class="barra-progreso5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-git"></i></span>
+            <h4>GIT</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">90%</span>
+            <div class="barra">
+                <div id="GIT" class="barra-progreso6"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-brands fa-python"></i></span>
+            <h4>Python</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">60%</span>
+            <div class="barra">
+                <div id="Python" class="barra-progreso7"></div>
+            </div>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>C#</h4>
+            <hr>
+            <p><span class="lista">Nivel</span></p>
+            <span class="porcentaje">50%</span>
+            <div class="barra">
+                <div id="C#" class="barra-progreso8"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <%- include('template/footer'); %>
