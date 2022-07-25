@@ -1,50 +1,48 @@
 <%- include('template/narbar'); %>
 
-<div class="container p-4">
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <div class="card">
-        <div class="card-body">
-          <form action="/formulario" method="post">
-            <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                placeholder="Nombre completo"
-                autofocus
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                name="email"
-                placeholder="Email"
-                class="form-control"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                name="Phone"
-                placeholder="Numero celuluar"
-                class="form-control"
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                name="message"
-                rows="2"
-                class="form-control"
-                placeholder="Cuentame para que soy bueno"
-              ></textarea>
-            </div>
-            <button class="btn btn-primary btn-block">Enviar</button>
-          </form>
-        </div>
+<section id="contacto">
+  <h3 class="titulo-seccion">Contactame Ahora</h3>
+  <div class="contenedor-form">
+    <form action="/formulario" method="post">
+      <div class="fila mitad">
+        <input
+          type="text"
+          placeholder="Nombre Completo"
+          class="input-mitad"
+          name="name"
+          autofocus
+        />
+        <input
+          type="text"
+          placeholder="Numero de contacto"
+          class="input-mitad"
+          name="Phone"
+        />
       </div>
-    </div>
+      <div class="fila">
+        <input
+          type="email"
+          placeholder="Email de contacto"
+          name="email"
+          class="input-full"
+        />
+      </div>
+      <div class="fila">
+        <textarea
+          name="message"
+          class="input-full"
+          placeholder="Deja tu mensaje..."
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <input
+        type="submit"
+        class="btn-enviar"
+        value="Enviar Mensaje"
+      />
+    </form>
   </div>
-</div>
+</section>
 
 <%- include('template/footer'); %>

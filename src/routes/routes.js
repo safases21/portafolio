@@ -24,6 +24,10 @@ router.get("/proyectos", (req, res) => {
   });
 });
 
+router.get("/download/:id", (req, res)=>{
+  res.sendFile(path.join(__dirname, "..", "public/pdf/cv.pdf"));
+})
+
 //ruta del formulario
 router.post("/formulario", async (req, res) => {
   const { name, email, Phone, message } = req.body;
@@ -51,7 +55,7 @@ router.post("/formulario", async (req, res) => {
     from: "'Server del Portafolio' <konichiva3125@gmail.com>",
     to: "konichiva3125@gmail.com",
     subject: "formulario de contacto del portafolio",
-    html: contentHTML
+    html: contentHTML,
   });
 
   console.log("message sent", info.messageId);

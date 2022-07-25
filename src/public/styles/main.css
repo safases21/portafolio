@@ -140,9 +140,10 @@ html {
 .fila .servicio {
   max-width: 350px;
   background-color: #fff;
-  padding: 45px;
+  padding: 48px;
+  width: 292px;
   margin: 10px 1px;
-  border-radius: 5px;
+  border-radius: 14px;
   transition: .5s;
 }
 .fila .servicio:hover{
