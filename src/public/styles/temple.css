@@ -165,4 +165,16 @@ footer a {
     #habilidades .fila .servicio {
         margin: 45px auto;
     }
+    #contacto {
+        padding: 50px 15px;
+
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }

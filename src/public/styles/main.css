@@ -197,7 +197,7 @@ html {
 }
 .fila .servicio .barra .barra-progreso2 {
   background-color: #286A56;
-  width: 85%;
+  width: 75%;
   height: 6px;
   animation: progreso2 2s forwards;
 }
@@ -221,7 +221,7 @@ html {
 }
 .fila .servicio .barra .barra-progreso6 {
   background-color: #286A56;
-  width: 90%;
+  width: 45%;
   height: 6px;
   animation: progreso6 2s forwards;
 }
@@ -243,7 +243,7 @@ html {
 }
 @keyframes progreso2{
   0%{width: 0;}
-  100%{width: 85%;}
+  100%{width: 75%;}
 }
 @keyframes progreso3{
   0%{width: 0;}
@@ -259,7 +259,7 @@ html {
 }
 @keyframes progreso6{
   0%{width: 0;}
-  100%{width: 90%;}
+  100%{width: 45%;}
 }
 @keyframes progreso7{
   0%{width: 0;}
